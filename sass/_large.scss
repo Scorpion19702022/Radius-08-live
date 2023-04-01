@@ -1,0 +1,39 @@
+@media (min-width: 992px) {
+	nav {
+		.wrapper {
+			.logo {
+				a {
+					img {
+						width: 23%;
+						height: 23%;
+					}
+				}
+			}
+			.language {
+				left: 15%;
+				width: 5%;
+			}
+			.navbar {
+				width: 58%;
+			}
+		}
+	}
+	.sectionhome {
+		.cards {
+			padding: 0.4em;
+			&__cardone {
+				&--img {
+					margin-bottom: 1.2em;
+				}
+				&--heading {
+					font-size: 6rem;
+				}
+			}
+			&__cardtwo {
+				&--img {
+					margin-bottom: 1.2em;
+				}
+			}
+		}
+	}
+}
