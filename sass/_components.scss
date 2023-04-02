@@ -1,6 +1,7 @@
 main {
 	height: 100%;
 	position: relative;
+	overflow: hidden;
 	.hero {
 		z-index: -100;
 		&__img {
