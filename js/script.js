@@ -12,6 +12,11 @@ const body = document.querySelector('body')
 const imgCardOne = document.querySelector('.imgcardone')
 const imgCardTwo = document.querySelector('.imgcardtwo')
 
+const cardAboutOne = document.querySelector('.aboutone')
+const cardAboutTwo = document.querySelector('.abouttwo')
+const cardAboutThree = document.querySelector('.aboutthree')
+const cardAboutFour = document.querySelector('.aboutfour')
+
 body.onload = function () {
 	loadCards()
 }
@@ -29,6 +34,19 @@ const loadCards = () => {
 	setTimeout(() => {
 		imgCardTwo.classList.add('imgcardoneview')
 	}, 3200)
+
+	setTimeout(() => {
+		cardAboutOne.classList.add('actioncardsaboutus')
+	}, 500)
+	setTimeout(() => {
+		cardAboutTwo.classList.add('actioncardsaboutus')
+	}, 1000)
+	setTimeout(() => {
+		cardAboutThree.classList.add('actioncardsaboutus')
+	}, 1500)
+	setTimeout(() => {
+		cardAboutFour.classList.add('actioncardsaboutus')
+	}, 2000)
 }
 
 // ------------------------------------------
@@ -48,47 +66,5 @@ const handleNav = () => {
 }
 
 // ------------------------------------------
-
-const counterBox = document.querySelector('.cards')
-const counter = document.querySelectorAll('.card__heading')
-
-console.log(counter)
-
-const options = {
-	rootMargin: '-1000px',
-}
-
-const startCounter = entry => {
-	console.log(entry[0])
-	console.log(entry[0].isIntersecting)
-
-	if (entry[0].isIntersecting) {
-		counter.forEach(count => {
-			console.log(count)
-
-			const updateCount = () => {
-				const final = count.getAttribute('data-number')
-				const value = parseInt(count.textContent)
-
-				// const speed = 300
-				// console.log(final / 300)
-
-				const speed = final / 300
-
-				if (value < final) {
-					count.textContent = `${Math.floor(value + speed)}`
-					setTimeout(updateCount, 3)
-				} else {
-					count.textContent = final
-				}
-			}
-
-			updateCount()
-		})
-	}
-}
-
-const observer = new IntersectionObserver(startCounter, options)
-observer.observe(counterBox)
 
 burgerBtn.addEventListener('click', handleNav)

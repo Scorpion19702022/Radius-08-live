@@ -19,7 +19,7 @@ main .hero__shadow {
   width: 100%;
   height: 100vh;
   background-color: var(--color-darkone);
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 section {
@@ -370,22 +370,7 @@ nav .wrapper .burger .hide {
   opacity: 1;
 }
 
-.aboutus {
-  height: 100%;
-  padding: 1em 2em 2em 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.aboutus .cards {
-  width: 100%;
-  height: 100%;
+.sectionaboutus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,12 +382,12 @@ nav .wrapper .burger .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 6em 2em 2em 2em;
 }
-.aboutus .cards .card {
-  margin: 0.8em;
-  padding: 1em;
-  width: 40%;
-  height: 140px;
+.sectionaboutus .cardabout {
+  position: relative;
+  width: 45%;
+  height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,28 +402,46 @@ nav .wrapper .burger .hide {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 1em;
+  padding: 1.4em;
+  border: 0.02em solid var(--color-red);
+  -webkit-transition: all 0.02s ease-in;
+  transition: all 0.02s ease-in;
+}
+.sectionaboutus .cardabout:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0.3em 0.3em 0em var(--color-red);
+          box-shadow: 0.3em 0.3em 0em var(--color-red);
+}
+.sectionaboutus .cardabout__heading {
+  font-size: 2.8rem;
   color: var(--color-light);
-  border: 0.04em solid var(--color-darklight);
-  margin-bottom: 1em;
 }
-.aboutus .cards .card i {
-  color: var(--color-red);
-  font-size: 1.8em;
-  margin-bottom: 0.2em;
+.sectionaboutus .cardabout__img {
+  width: 100%;
+  height: 40%;
 }
-.aboutus .cards .card__heading {
-  font-size: 2em;
-  font-weight: 300;
-  margin-bottom: 0.4em;
+.sectionaboutus .cardabout__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.aboutus .cards .card h4 {
-  font-size: 1.2rem;
+.sectionaboutus .cardabout .imganime {
+  width: 100%;
+  height: 40%;
 }
-.aboutus .cards .card .card__btn {
-  opacity: 0;
+.sectionaboutus .cardabout .imganime img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.aboutus .cards .card__btn {
+.sectionaboutus .cardabout .btnanime {
+  position: absolute;
   width: 70%;
+  bottom: 10%;
   padding: 0.4em 0;
   background-color: var(--color-red);
   border: 0.04em solid var(--color-darkred);
@@ -447,10 +450,10 @@ nav .wrapper .burger .hide {
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
-.aboutus .cards .card__btn:hover {
+.sectionaboutus .cardabout .btnanime:hover {
   background-color: var(--color-darkred);
 }
-.aboutus .cards .card__btn a {
+.sectionaboutus .cardabout .btnanime a {
   text-decoration: none;
   color: var(--color-light);
   text-transform: uppercase;
@@ -498,6 +501,20 @@ nav .wrapper .burger .hide {
   }
   .sectionhome .cards__cardtwo--btn {
     margin-top: 1.2em;
+  }
+  .sectionaboutus {
+    height: 100%;
+  }
+  .sectionaboutus .cardabout {
+    width: 100%;
+    height: 500px;
+    margin: 0em 0em 1.8em 0em;
+  }
+  .sectionaboutus .cardabout__heading {
+    font-size: 3rem;
+  }
+  .sectionaboutus .cardabout__text {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 768px) {
@@ -578,6 +595,32 @@ nav .wrapper .burger .hide {
   .sectionhome .cards__cardtwo--img .imgcardtwo {
     width: 50%;
   }
+  .sectionaboutus .cardabout {
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .sectionaboutus .cardabout__heading {
+    font-size: 3.4rem;
+  }
+  .sectionaboutus .cardabout__text {
+    font-size: 1.8rem;
+  }
+  .sectionaboutus .cardabout__img {
+    height: 50%;
+  }
+  .sectionaboutus .cardabout .imganime {
+    height: 50%;
+  }
+  .sectionaboutus .actioncardsaboutus {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    opacity: 1;
+  }
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {
@@ -642,6 +685,16 @@ nav .wrapper .burger .hide {
   .sectionhome .cards__cardtwo--text {
     font-size: 1.8rem;
   }
+  .sectionaboutus .cardabout {
+    width: 46%;
+    height: 45%;
+  }
+  .sectionaboutus .cardabout__img {
+    height: 57%;
+  }
+  .sectionaboutus .cardabout .imganime {
+    height: 57%;
+  }
 }
 @media (min-width: 1400px) {
   nav .wrapper .logo {
@@ -681,5 +734,22 @@ nav .wrapper .burger .hide {
   }
   .sectionhome .cards__cardtwo--text {
     font-size: 1.8rem;
+  }
+  .sectionaboutus {
+    padding: 6em 1em 1em 1em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sectionaboutus .cardabout {
+    width: 20%;
+    height: 70%;
+  }
+  .sectionaboutus .cardabout__img {
+    height: 50%;
+  }
+  .sectionaboutus .cardabout .imganime {
+    height: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
