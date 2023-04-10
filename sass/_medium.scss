@@ -5,8 +5,8 @@
 			.logo {
 				a {
 					img {
-						width: 25%;
-						height: 25%;
+						width: 24.7%;
+						height: 24.7%;
 					}
 				}
 			}
@@ -73,7 +73,7 @@
 			perspective: 1000px;
 			transform: rotateY(0);
 			opacity: 0;
-			transition: all 1s ease-in-out;
+			transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 			&__heading {
 				font-size: 3.4rem;
 			}
@@ -90,6 +90,29 @@
 		.actioncardsaboutus {
 			transform: rotateY(360deg);
 			opacity: 1;
+		}
+	}
+	.sectionoffer {
+		.offer {
+			padding: 0em 2em;
+			&__text {
+				margin-bottom: 2em;
+				&--heading {
+					font-size: 3.6rem;
+				}
+				&--list {
+					ul {
+						li {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+			&__img {
+				img {
+					box-shadow: 0.3em 0.3em 0em var(--color-red);
+				}
+			}
 		}
 	}
 }

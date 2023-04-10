@@ -17,6 +17,11 @@ const cardAboutTwo = document.querySelector('.abouttwo')
 const cardAboutThree = document.querySelector('.aboutthree')
 const cardAboutFour = document.querySelector('.aboutfour')
 
+// --------------------------------------
+
+const imgOfferOne = document.querySelector('.offerimgone')
+const imgOfferTwo = document.querySelector('.offerimgtwo')
+
 body.onload = function () {
 	loadCards()
 }
@@ -67,4 +72,24 @@ const handleNav = () => {
 
 // ------------------------------------------
 
+const scrollOffer = () => {
+	if (window.scrollY >= 560) {
+		imgOfferOne.classList.add('actionofferzero')
+		imgOfferTwo.classList.add('actionofferzero')
+	} else {
+		imgOfferOne.classList.remove('actionofferzero')
+		imgOfferTwo.classList.remove('actionofferzero')
+	}
+	if (window.scrollY >= 880) {
+		imgOfferOne.classList.add('actionofferone')
+		imgOfferTwo.classList.add('actionofferone')
+	} else {
+		imgOfferOne.classList.remove('actionofferone')
+		imgOfferTwo.classList.remove('actionofferone')
+	}
+}
+
+// ------------------------------------------
+
 burgerBtn.addEventListener('click', handleNav)
+window.addEventListener('scroll', scrollOffer)

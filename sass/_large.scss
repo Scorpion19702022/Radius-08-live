@@ -4,8 +4,8 @@
 			.logo {
 				a {
 					img {
-						width: 23%;
-						height: 23%;
+						width: 22%;
+						height: 22%;
 					}
 				}
 			}
@@ -32,6 +32,20 @@
 			&__cardtwo {
 				&--img {
 					margin-bottom: 1.2em;
+				}
+			}
+		}
+	}
+	.sectionoffer {
+		.offer {
+			&__text {
+				margin-bottom: 4em;
+				&--list {
+					ul {
+						li {
+							margin-bottom: 0.6em;
+						}
+					}
 				}
 			}
 		}
