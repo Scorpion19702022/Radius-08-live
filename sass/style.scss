@@ -365,6 +365,227 @@ nav {
 	}
 }
 
+// ---- GALLERY ----
+
+.sectiongallery {
+	position: relative;
+	height: 100vh;
+	padding: 6em 2em 2em 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	.text {
+		display: flex;
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		&__info {
+			font-size: 2.2rem;
+		}
+	}
+	.fotogallery {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		.photo {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70%;
+			height: 43%;
+			transform: translateX(-150%);
+			cursor: pointer;
+			transition: transform 0.3s ease-in-out;
+			&:hover {
+				border: 0.02em solid var(--color-red);
+				box-shadow: 0.1em 0.1em 0em var(--color-red);
+			}
+			&__main {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&__text {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 2.8rem;
+				color: var(--color-light);
+				z-index: 1;
+			}
+			&__shadow {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				background-color: var(--color-darklightopacity);
+			}
+		}
+		.actionphotomain {
+			transform: translateX(0);
+		}
+
+		.video {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70%;
+			height: 43%;
+			transform: translateX(150%);
+			cursor: pointer;
+			transition: transform 0.3s ease-in-out;
+			&:hover {
+				border: 0.02em solid var(--color-red);
+				box-shadow: 0.1em 0.1em 0em var(--color-red);
+			}
+			&__main {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&__text {
+				position: absolute;
+				font-size: 2.8rem;
+				color: var(--color-light);
+				z-index: 1;
+			}
+			&__shadow {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				background-color: var(--color-darklightopacity);
+			}
+		}
+		.actionvideomain {
+			transform: translateX(0);
+		}
+	}
+
+	.photoswiper {
+		position: absolute;
+		top: 40%;
+		width: 80%;
+		height: 40%;
+		visibility: hidden;
+	}
+
+	.swiper-slide {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		h3 {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.4em;
+			bottom: 0;
+			font-size: 3rem;
+			width: 100%;
+			color: var(--color-light);
+			font-weight: 200;
+			background-color: var(--color-darklightopacity);
+		}
+		.xmark {
+			position: absolute;
+			top: 5%;
+			right: 5%;
+			font-size: 4rem;
+			color: var(--color-darkone);
+			cursor: pointer;
+			transition: color 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-red);
+			}
+		}
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		color: var(--color-darklight);
+		&:hover {
+			color: var(--color-red);
+		}
+	}
+
+	.swiper-pagination {
+		bottom: 20%;
+	}
+	.swiperaction {
+		visibility: visible;
+	}
+
+	// -----------------------------
+
+	.videoswiper {
+		position: absolute;
+		top: 40%;
+		width: 85%;
+		height: 40%;
+		visibility: hidden;
+	}
+
+	.video {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.xmarkvideo {
+			position: absolute;
+			top: 5%;
+			right: 5%;
+			font-size: 4rem;
+			color: var(--color-darkone);
+			cursor: pointer;
+			transition: color 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-red);
+			}
+		}
+	}
+
+	.next,
+	.prev {
+		color: var(--color-darklight);
+		&:hover {
+			color: var(--color-red);
+		}
+	}
+
+	.swiper-pagination {
+		bottom: 20%;
+	}
+	.videoaction {
+		visibility: visible;
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';

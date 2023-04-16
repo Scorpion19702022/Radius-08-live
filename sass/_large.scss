@@ -50,4 +50,42 @@
 			}
 		}
 	}
+
+	.sectiongallery {
+		.fotogallery {
+			.photo {
+				height: 46%;
+				&:hover {
+					border: 0.02em solid var(--color-red);
+					box-shadow: 0.25em 0.25em 0em var(--color-red);
+				}
+				&__text {
+					font-size: 4rem;
+				}
+			}
+			.video {
+				height: 46%;
+				&:hover {
+					border: 0.02em solid var(--color-red);
+					box-shadow: 0.25em 0.25em 0em var(--color-red);
+				}
+				&__text {
+					font-size: 4rem;
+				}
+			}
+		}
+		.photoswiper {
+			top: 30%;
+			width: 80%;
+			height: 60%;
+		}
+		.swiper-pagination {
+			bottom: 15%;
+		}
+		.videoswiper {
+			top: 30%;
+			width: 80%;
+			height: 60%;
+		}
+	}
 }

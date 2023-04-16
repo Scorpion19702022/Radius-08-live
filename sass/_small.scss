@@ -88,4 +88,40 @@
 			}
 		}
 	}
+
+	.sectiongallery {
+		.text {
+			width: 100%;
+			&__info {
+				font-size: 1.8rem;
+			}
+		}
+		.fotogallery {
+			.photo {
+				width: 100%;
+			}
+			.video {
+				width: 100%;
+			}
+		}
+		.swiper-slide {
+			h3 {
+				font-size: 2rem;
+			}
+			.xmark {
+				font-size: 3rem;
+			}
+		}
+		.swiper-pagination {
+			bottom: 17%;
+		}
+		.video {
+			.xmarkvideo {
+				font-size: 2em;
+			}
+		}
+		.pagination {
+			bottom: 30%;
+		}
+	}
 }

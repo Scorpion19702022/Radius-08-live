@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radius 08</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="./img/radius logo.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/2ab53ed4ce.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav>
+
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="./img/radius logo.png" alt="logo"></a>
+            </div>
+            <div class="language">
+                <a href="#" class="language__pl">PL</a>
+                <a href="galleryENG.html" class="language__en red">EN</a>
+            </div>
+            <div class="navbar">
+                <a href="index.html" class="navbar__link" onclick="void(0)">Home</a>
+                <a href="aboutus.html" class="navbar__link" onclick="void(0)">O nas</a>
+                <a href="index.html#offer" class="navbar__link" onclick="void(0)">Oferta</a>
+                <a href="#" class="navbar__link" onclick="void(0)">Galeria</a>
+                <a href="#" class="navbar__link" onclick="void(0)">Kotakt</a>
+            </div>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark hide"></i>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <main>
+        <div class="hero">
+            <div class="hero__shadow"></div>
+
+        </div>
+
+        <section class="sectiongallery">
+            <div class="text">
+                <p class="text__info">Z pewnością mogą zainteresować nasze prace. Zapraszamy do galerii zdjęć i filmów.
+                    Wystarczy kliknąć na obraz</p>
+            </div>
+            <div class="fotogallery">
+                <div class="photo">
+                    <img src="./img/galleryFOTO/foto_main.jpg" alt="zdjęcie drukarki 3d" class="photo__main">
+                    <h2 class="photo__text">Zobacz galerię zdjęć</h2>
+                    <div class="photo__shadow"></div>
+                </div>
+                <div class="video">
+                    <video class="video__main" src="./img/galleryVIDEO/mainVIDEO.mp4" autoplay loop></video>
+                    <h2 class="video__text">Zobacz galerię filmów</h2>
+                    <div class="video__shadow"></div>
+                </div>
+            </div>
+
+
+            <div class="photoswiper swiper sliders">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3>Tu będzie opis pracy na zdjęciu</h3>
+                        <img src="./img/galleryFOTO/foto1.jpg" alt="">
+                        <i class="fa-solid fa-circle-xmark xmark"></i>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Tu będzie opis pracy na zdjęciu</h3>
+                        <img src="./img/galleryFOTO/foto2.jpg" alt="">
+                        <i class="fa-solid fa-circle-xmark xmark"></i>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Tu będzie opis pracy na zdjęciu</h3>
+                        <img src="./img/galleryFOTO/foto3.jpg" alt="">
+                        <i class="fa-solid fa-circle-xmark xmark"></i>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="videoswiper swiper videosswipers">
+                <div class="swiper-wrapper videos">
+                    <div class="swiper-slide video">
+                        <video src="./img/galleryVIDEO/video1.mp4" controls></video>
+                        <i class="fa-solid fa-circle-xmark xmarkvideo"></i>
+                    </div>
+                    <div class="swiper-slide video">
+                        <video src="./img/galleryVIDEO/video2.mp4" controls></video>
+                        <i class="fa-solid fa-circle-xmark xmarkvideo"></i>
+                    </div>
+                    <div class="swiper-slide video">
+                        <video src="./img/galleryVIDEO/video3.mp4" controls></video>
+                        <i class="fa-solid fa-circle-xmark xmarkvideo"></i>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next next"></div>
+                <div class="swiper-button-prev prev"></div>
+                <div class="swiper-pagination pagination"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/gallery.js"></script>
+</body>
+
+</html>
