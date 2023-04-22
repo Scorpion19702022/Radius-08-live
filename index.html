@@ -37,7 +37,7 @@
                 <a href="aboutus.html" class="navbar__link" onclick="void(0)">O nas</a>
                 <a href="#offer" class="navbar__link" onclick="void(0)">Oferta</a>
                 <a href="gallery.html" class="navbar__link" onclick="void(0)">Galeria</a>
-                <a href="#" class="navbar__link" onclick="void(0)">Kontakt</a>
+                <a href="#contact" class="navbar__link" onclick="void(0)">Kontakt</a>
             </div>
             <div class="burger">
                 <i class="fa-solid fa-bars"></i>
@@ -103,6 +103,37 @@
                     <img src="./img/offer/offer1.jpg" alt="zdjęcie oferty druku" class="offerimgone">
                     <img src="./img/offer/offer2.jpg" alt="zdjęcie oferty druku" class="offerimgtwo">
                 </div>
+            </div>
+        </section>
+
+        <section class="sectioncontact" id="contact">
+            <div class="boxcontact">
+                <h2 class="boxcontact__heading">Wyślij do nas maila</h2>
+                <form action="mail.php" method="post" class="contactform">
+                    <div class="contactbox">
+                        <label for="name">Twoje imię:</label>
+                        <input type="text" id="name" placeholder="podaj swoje imię" name="name">
+                        <p class="errorname">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="email">Twój e-mail:</label>
+                        <input type="email" id="email" placeholder="podaj swój e-mail" name="email">
+                        <p class="erroremail">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="msg">Twoja wiadomość:</label>
+                        <textarea name="msg" id="msg" placeholder="wpisz tekst"></textarea>
+                        <p class="errortext">error</p>
+                    </div>
+                    <div class="btncontact">
+                        <button class="btnsend">Wyślij</button>
+                        <button class="btnclear">Wyczyść</button>
+                    </div>
+
+                </form>
+
+                <p class="msgstatus"></p>
+
             </div>
         </section>
 
