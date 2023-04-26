@@ -22,16 +22,27 @@
 		.cards {
 			padding: 0.4em;
 			&__cardone {
+				height: 47%;
 				&--img {
 					margin-bottom: 1.2em;
+					.imgcardone {
+						width: 35%;
+					}
 				}
 				&--heading {
 					font-size: 4.2rem;
 				}
 			}
 			&__cardtwo {
+				height: 47%;
 				&--img {
 					margin-bottom: 1.2em;
+					.imgcardtwo {
+						width: 35%;
+					}
+				}
+				&--btn {
+					margin-top: 0;
 				}
 			}
 		}
@@ -86,6 +97,14 @@
 			top: 30%;
 			width: 80%;
 			height: 60%;
+		}
+	}
+
+	.sectioncontact {
+		.boxcontact {
+			.msgstatus {
+				width: 84%;
+			}
 		}
 	}
 }
