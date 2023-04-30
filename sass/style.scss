@@ -688,6 +688,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	.footercompany {
+		padding-left: 1em;
 		display: flex;
 		align-items: center;
 		width: 47%;
@@ -701,7 +702,7 @@ footer {
 		}
 	}
 	.footerproducer {
-		width: 50%;
+		width: 52%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -713,9 +714,20 @@ footer {
 			font-size: 1.4rem;
 			color: var(--color-lightmore);
 		}
-		a {
-			text-decoration: none;
-			color: var(--color-light);
+		.contact {
+			display: flex;
+			width: 80%;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 0.2em;
+			a {
+				text-decoration: none;
+				color: var(--color-light);
+				transition: color 0.2s ease-in-out;
+				&:hover {
+					color: var(--color-red);
+				}
+			}
 		}
 	}
 }
