@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+    <div class="shadow"></div>
 
     <nav>
 
@@ -37,7 +37,7 @@
                 <a href="aboutus.html" class="navbar__link" onclick="void(0)">O nas</a>
                 <a href="#offer" class="navbar__link" onclick="void(0)">Oferta</a>
                 <a href="gallery.html" class="navbar__link" onclick="void(0)">Galeria</a>
-                <a href="#contact" class="navbar__link" onclick="void(0)">Kontakt</a>
+                <a href="contact.html" class="navbar__link" onclick="void(0)">Kontakt</a>
             </div>
             <div class="burger">
                 <i class="fa-solid fa-bars"></i>
@@ -106,38 +106,6 @@
             </div>
         </section>
 
-        <section class="sectioncontact" id="contact">
-            <div class="boxcontact">
-                <h2 class="boxcontact__heading">Wyślij do nas maila</h2>
-                <!-- <form action="./php/mailPL.php" method="post" class="contactform"> -->
-                <form class="contactform">
-                    <div class="contactbox">
-                        <label for="name">Twoje imię:</label>
-                        <input type="text" id="name" placeholder="podaj swoje imię" name="name">
-                        <p class="errorname">error</p>
-                    </div>
-                    <div class="contactbox">
-                        <label for="email">Twój e-mail:</label>
-                        <input type="email" id="email" placeholder="podaj swój e-mail" name="email">
-                        <p class="erroremail">error</p>
-                    </div>
-                    <div class="contactbox">
-                        <label for="msg">Twoja wiadomość:</label>
-                        <textarea name="msg" id="msg" placeholder="wpisz tekst"></textarea>
-                        <p class="errortext">error</p>
-                    </div>
-                    <div class="btncontact">
-                        <button class="btnsend">Wyślij</button>
-                        <button class="btnclean">Wyczyść</button>
-                    </div>
-
-                </form>
-
-                <p class="msgstatus"></p>
-
-            </div>
-        </section>
-
         <footer>
             <div class="footercompany">
                 <img src="./img/radius logo.png" alt="logo">
@@ -161,7 +129,7 @@
 
 
     <script src="./js/script.js"></script>
-    <script src="./js/mailPL.js"></script>
+    <!-- <script src="./js/mailPL.js"></script> -->
     <script src="./js/footerPL.js"></script>
 </body>
 

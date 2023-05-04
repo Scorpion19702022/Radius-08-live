@@ -30,22 +30,20 @@
             </div>
             <div class="language">
                 <a href="#" class="language__pl">PL</a>
-                <a href="aboutusENG.html" class="language__en red">EN</a>
+                <a href="conENG.html" class="language__en red">EN</a>
             </div>
             <div class="navbar">
-                <a href="index.html" class="navbar__link" onclick="void(0)">Home</a>
-                <a href="#aboutus" class="navbar__link" onclick="void(0)">O nas</a>
+                <a href="index.html#home" class="navbar__link" onclick="void(0)">Home</a>
+                <a href="aboutus.html" class="navbar__link" onclick="void(0)">O nas</a>
                 <a href="index.html#offer" class="navbar__link" onclick="void(0)">Oferta</a>
                 <a href="gallery.html" class="navbar__link" onclick="void(0)">Galeria</a>
-                <a href="contact.html" class="navbar__link" onclick="void(0)">Kontakt</a>
+                <a href="#" class="navbar__link" onclick="void(0)">Kontakt</a>
             </div>
             <div class="burger">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-xmark hide"></i>
             </div>
         </div>
-
-
     </nav>
 
     <main>
@@ -58,49 +56,38 @@
             <p class="cookie__text">Strona korzysta z ciasteczek</p>
             <button class="cookie__btn">akceptuj</button>
         </div>
+        <section class="sectioncontact" id="contact">
+            <div class="boxcontact">
+                <h2 class="boxcontact__heading">Wyślij do nas maila</h2>
+                <!-- <form action="./php/mailPL.php" method="post" class="contactform"> -->
+                <form class="contactform">
+                    <div class="contactbox">
+                        <label for="name">Twoje imię:</label>
+                        <input type="text" id="name" placeholder="podaj swoje imię" name="name">
+                        <p class="errorname">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="email">Twój e-mail:</label>
+                        <input type="email" id="email" placeholder="podaj swój e-mail" name="email">
+                        <p class="erroremail">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="msg">Twoja wiadomość:</label>
+                        <textarea name="msg" id="msg" placeholder="wpisz tekst"></textarea>
+                        <p class="errortext">error</p>
+                    </div>
+                    <div class="btncontact">
+                        <button class="btnsend">Wyślij</button>
+                        <button class="btnclean">Wyczyść</button>
+                    </div>
 
-        <section class="sectionaboutus">
+                </form>
 
-            <div class="cardabout aboutone">
-                <h2 class="cardabout__heading">Doświadczennie</h2>
-                <p class="cardabout__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate
-                    eveniet accusantium?</p>
-                <div class="cardabout__img">
-                    <img src="./img/about/about_vis01.jpg" alt="">
-                </div>
+                <p class="msgstatus"></p>
+
             </div>
-
-            <div class="cardabout abouttwo">
-                <h2 class="cardabout__heading">O pracach</h2>
-                <p class="cardabout__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa magni illo
-                    deserunt.</p>
-                <div class="cardabout__img">
-                    <img src="./img/about/about_vis02.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="cardabout aboutthree">
-                <h2 class="cardabout__heading">Zespół</h2>
-                <p class="cardabout__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat magni modi
-                    laudantium?</p>
-                <div class="cardabout__img">
-                    <img src="./img/about/about_vis03.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="cardabout aboutfour">
-                <h2 class="cardabout__heading">Animacja</h2>
-                <p class="cardabout__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat magni modi
-                    laudantium?</p>
-                <div class="imganime">
-                    <img src="./img/about/about_anim03.jpg" alt="" class="imganime__img">
-                </div>
-                <button class="btnanime">
-                    <a href="http://radius08.com/lama2" target="_blank">zobacz animację</a>
-                </button>
-            </div>
-
         </section>
+
         <footer>
             <div class="footercompany">
                 <img src="./img/radius logo.png" alt="logo">
@@ -108,7 +95,7 @@
             </div>
             <div class="footerproducer">
                 <p class="footerproducer__text">&copy; <span class="year"></span> </p>
-                <p class="footerproducer__info">Wykoanie: Jacek Mosiński</p>
+                <p class="footerproducer__info">Wykoanie: JM</p>
                 <div class="contact">
                     <p><a href="https://github.com/Scorpion19702022?tab=repositories" target="_blank">GitHub <i
                                 class="fa-brands fa-github"></i></a></p>
@@ -121,7 +108,7 @@
         </footer>
     </main>
 
-    <script src="./js/aboutus.js"></script>
+    <script src="./js/mailPL.js"></script>
     <script src="./js/footerPL.js"></script>
 </body>
 
