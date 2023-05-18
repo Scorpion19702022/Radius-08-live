@@ -3,6 +3,10 @@ main {
   position: relative;
   overflow: hidden;
 }
+main h1 {
+  color: var(--color-light);
+  font-size: 2.4em;
+}
 main .hero {
   position: fixed;
   top: 0;
@@ -398,21 +402,6 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.sectionhome .cards__cardtwo--img .imgcardtwo {
-  width: 40%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-}
-.sectionhome .cards__cardtwo--img .imgcardoneview {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
 .sectionhome .cards .actioncards {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -455,16 +444,9 @@ nav .wrapper .burger .hide {
   margin: 1em;
   padding: 1.4em;
   border: 0.02em solid var(--color-red);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 .sectionaboutus .cardabout:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0.3em 0.3em 0em var(--color-red);
-          box-shadow: 0.3em 0.3em 0em var(--color-red);
+  background-color: var(--color-rederrors);
 }
 .sectionaboutus .cardabout__heading {
   font-size: 2.8rem;
@@ -1161,8 +1143,8 @@ footer .footerproducer .contact a:hover {
   .sectionhome .cards__cardtwo {
     height: 47%;
   }
-  .sectionhome .cards__cardtwo--img {
-    height: 30%;
+  .sectionhome .cards__cardtwo--heading {
+    font-size: 2rem;
   }
   .sectionhome .cards__cardtwo--text {
     font-size: 1.2rem;
@@ -1381,13 +1363,6 @@ footer .footerproducer .contact a:hover {
     transition: transform 0.3s, opacity 1s ease-in-out;
     transition: transform 0.3s, opacity 1s ease-in-out, -webkit-transform 0.3s;
   }
-  .sectionhome .cards__cardtwo--img {
-    height: 40%;
-    margin-bottom: 0.2em;
-  }
-  .sectionhome .cards__cardtwo--img .imgcardtwo {
-    width: 40%;
-  }
   .sectionaboutus {
     padding: 6em 2em 2em 2em;
     height: 100vh;
@@ -1396,15 +1371,9 @@ footer .footerproducer .contact a:hover {
     margin: 1em;
     width: 47%;
     height: 360px;
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
     opacity: 0;
-    -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   .sectionaboutus .cardabout__heading {
     font-size: 3.4rem;
@@ -1419,8 +1388,6 @@ footer .footerproducer .contact a:hover {
     height: 50%;
   }
   .sectionaboutus .actioncardsaboutus {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
     opacity: 1;
   }
   .sectionoffer {
@@ -1515,12 +1482,6 @@ footer .footerproducer .contact a:hover {
   .sectionhome .cards__cardtwo {
     height: 47%;
   }
-  .sectionhome .cards__cardtwo--img {
-    margin-bottom: 1.2em;
-  }
-  .sectionhome .cards__cardtwo--img .imgcardtwo {
-    width: 35%;
-  }
   .sectionhome .cards__cardtwo--btn {
     margin-top: 0;
   }
@@ -1606,9 +1567,6 @@ footer .footerproducer .contact a:hover {
   .sectionhome .cards__cardtwo {
     padding: 3em;
     height: 47%;
-  }
-  .sectionhome .cards__cardtwo--img {
-    margin-bottom: 1.2em;
   }
   .sectionhome .cards__cardtwo--text {
     font-size: 1.8rem;
@@ -1724,9 +1682,6 @@ footer .footerproducer .contact a:hover {
   .sectionhome .cards__cardtwo {
     padding: 3em;
     height: 47%;
-  }
-  .sectionhome .cards__cardtwo--img {
-    margin-bottom: 1.2em;
   }
   .sectionhome .cards__cardtwo--text {
     font-size: 1.8rem;

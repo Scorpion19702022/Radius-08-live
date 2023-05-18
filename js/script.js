@@ -38,9 +38,9 @@ const loadCards = () => {
 	setTimeout(() => {
 		imgCardOne.classList.add('imgcardoneview')
 	}, 2400)
-	setTimeout(() => {
-		imgCardTwo.classList.add('imgcardoneview')
-	}, 3200)
+	// setTimeout(() => {
+	// 	imgCardTwo.classList.add('imgcardoneview')
+	// }, 3200)
 }
 
 // ------------------------------------------
@@ -77,14 +77,14 @@ const handleCookie = () => {
 // ------------------------------------------
 
 const scrollOffer = () => {
-	if (window.scrollY >= 560) {
+	if (window.scrollY >= 400) {
 		imgOfferOne.classList.add('actionofferzero')
 		imgOfferTwo.classList.add('actionofferzero')
 	} else {
 		imgOfferOne.classList.remove('actionofferzero')
 		imgOfferTwo.classList.remove('actionofferzero')
 	}
-	if (window.scrollY >= 880) {
+	if (window.scrollY >= 600) {
 		imgOfferOne.classList.add('actionofferone')
 		imgOfferTwo.classList.add('actionofferone')
 	} else {
